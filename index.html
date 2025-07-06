@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pakistan Retail Payment System Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .centered-title { text-align: center; margin-bottom: 20px; }
+        .centered-label { display: block; text-align: center; margin-bottom: 10px; font-weight: 600; }
+        .filters-section .filter-group label { text-align: center; width: 100%; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Pakistan Retail Payment System Dashboard</h1>
+            <p>Quarterly Overview of Payment Transactions (FY24-FY25)</p>
+        </header>
+
+        <div class="dashboard-grid">
+            <!-- Filters Section -->
+            <div class="filters-section">
+                <h2 class="centered-title">Data Filters</h2>
+                <div class="filter-group">
+                    <label for="transactionType" class="centered-label">Transaction Type:</label>
+                    <select id="transactionType">
+                        <option value="all">All Transaction Types</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="subType" class="centered-label">Sub Type:</label>
+                    <select id="subType">
+                        <option value="all">All Sub Types</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="metricType" class="centered-label">Metric:</label>
+                    <select id="metricType">
+                        <option value="volume">Volume (Millions)</option>
+                        <option value="value">Value (Millions PKR)</option>
+                    </select>
+                </div>
+                <button id="resetFilters" class="btn-secondary">Reset</button>
+            </div>
+
+            <!-- Summary Cards -->
+            <div class="summary-section">
+                <div class="summary-header" style="display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 20px;">
+                    <h2 id="summaryTitle" class="centered-title" style="margin-bottom: 0;">Summary Statistics (<span id="summaryQuarterLabel">Q3 FY25</span>)</h2>
+                    <select id="summaryQuarterSelect" class="highlight-dropdown" style="padding: 10px 18px; border-radius: 8px; font-size: 1.1rem; font-weight: bold; background: #f0f6ff; border: 2px solid #3498db; color: #1a237e; box-shadow: 0 2px 8px rgba(52,152,219,0.08); cursor: pointer;">
+                        <option value="Q3_FY24">Q3 FY24</option>
+                        <option value="Q4_FY24">Q4 FY24</option>
+                        <option value="Q1_FY25">Q1 FY25</option>
+                        <option value="Q2_FY25">Q2 FY25</option>
+                        <option value="Q3_FY25">Q3 FY25</option>
+                    </select>
+                </div>
+                <div class="summary-cards">
+                    <div class="summary-card">
+                        <h3>Total Volume</h3>
+                        <p id="totalVolume">-</p>
+                    </div>
+                    <div class="summary-card">
+                        <h3>Total Value</h3>
+                        <p id="totalValue">-</p>
+                    </div>
+                    <div class="summary-card">
+                        <h3>Transaction Types</h3>
+                        <p id="transactionTypesCount">-</p>
+                    </div>
+                    <div class="summary-card">
+                        <h3>Sub Types</h3>
+                        <p id="subTypesCount">-</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chart Section -->
+            <div class="chart-section">
+                <h2 class="centered-title">Trend Analysis</h2>
+                <div class="chart-container">
+                    <canvas id="trendChart"></canvas>
+                </div>
+                <div class="pie-controls" style="margin-top: 30px;">
+                    <label for="quarterSelect" class="centered-title">Select any Transcation Type for Pie Chart</label>
+                </div>
+                <div class="pie-charts-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 30px;">
+                    <div class="pie-chart-item">
+                        <div style="text-align:center; font-weight:bold; margin-bottom:8px;">Q3 FY24</div>
+                        <canvas id="pieChart_Q3_FY24"></canvas>
+                    </div>
+                    <div class="pie-chart-item">
+                        <div style="text-align:center; font-weight:bold; margin-bottom:8px;">Q4 FY24</div>
+                        <canvas id="pieChart_Q4_FY24"></canvas>
+                    </div>
+                    <div class="pie-chart-item">
+                        <div style="text-align:center; font-weight:bold; margin-bottom:8px;">Q1 FY25</div>
+                        <canvas id="pieChart_Q1_FY25"></canvas>
+                    </div>
+                    <div class="pie-chart-item">
+                        <div style="text-align:center; font-weight:bold; margin-bottom:8px;">Q2 FY25</div>
+                        <canvas id="pieChart_Q2_FY25"></canvas>
+                    </div>
+                    <div class="pie-chart-item">
+                        <div style="text-align:center; font-weight:bold; margin-bottom:8px;">Q3 FY25</div>
+                        <canvas id="pieChart_Q3_FY25"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Data Table Section -->
+            <div class="table-section">
+                <h2>Transaction Data</h2>
+                <div class="table-controls">
+                    <input type="text" id="searchInput" placeholder="Search transactions...">
+                    <select id="tableFilter">
+                        <option value="all">All Data</option>
+                        <option value="filtered">Filtered Data</option>
+                    </select>
+                </div>
+                <div class="table-container">
+                    <table id="dataTable">
+                        <thead>
+                            <tr>
+                                <th>Transaction Type</th>
+                                <th>Sub Type</th>
+                                <th>Q3 FY24</th>
+                                <th>Q4 FY24</th>
+                                <th>Q1 FY25</th>
+                                <th>Q2 FY25</th>
+                                <th>Q3 FY25</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                            <!-- Data will be populated by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer style="text-align:center; margin-top:40px; padding:20px 0; color:#555; font-size:1rem; background:rgba(255,255,255,0.85); border-top:1px solid #e0e6ed;">
+        &copy; 2025 Irfan Rashid.<br>Made by Irfan Rashid.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
