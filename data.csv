@@ -1,49 +1,48 @@
-Transaction Type,Sub_type,Q3_FY24_Volume,Q3_FY24_Value,Q4_FY24_Volume,Q4_FY24_Value,Q1_FY25_Volume,Q1_FY25_Value,Q2_FY25_Volume,Q2_FY25_Value,Q3_FY25_Volume,Q3_FY25_Value
-ATM,Cash withdrawals,230.5,3518.2,239.4,3680.1,237.5,3531.5,253,3872.8,265.3,4318.2
-ATM,Intra-Bank Fund Transfer,1.3,80.3,1.3,75.8,1.2,75.6,1.3,76.4,1.3,84.8
-ATM,Inter-Bank Fund Transfers,3.4,172.2,3.3,162.6,3.3,164.6,3.5,171.9,3.6,179.4
-ATM,Utilities Bill Payments,0.3,4.3,0.2,4.5,0.3,5.4,0.3,5,0.3,4.4
-ATM,Cash/Instrument Deposits,1,111.4,1,103.9,1.1,115,1.2,131,0.5,162.9
-ATM,Other ATM based,0,0.2,0,0.2,0.01,0.19,0.01,0.19,0.01,0.2
-POS Transacations,Cash withdrawals,0.1,7.2,0.1,6.2,0.1,5.5,0.1,5.5,0.1,4.6
-POS Transacations,Purchase - Local,66.2,363.6,73.3,390.5,79.5,404,85.3,482.5,95,522.1
-POS Transacations,Purchase – International,4.3,23.2,3.3,18.5,3.1,17.3,3.3,21.6,3.8,23.2
-IB Transactions,Intra-Bank Fund Transfers,16.6,2334.4,16.5,2572.7,15.9,2652.7,17.3,3157.8,19,3421
-IB Transactions,Inter-Bank Fund Transfers,34,3133.2,34.5,3305.4,37.4,3514.6,43.5,4955.2,45.5,5015.1
-IB Transactions,Utilities Bill Payments,6.6,367.3,5.2,380.9,5.4,426.5,5.3,467.4,5.2,439.5
-IB Transactions,Miscellaneous Payments,1.4,599.4,1.4,756.9,1.4,943.2,1.5,1077.4,1.5,749.1
-MB Transactions,Intra-Bank Fund Transfers,60.6,5112.3,62.5,5306.8,67.5,5930.9,77.1,6944.6,90.3,8571.4
-MB Transactions,Inter-Bank Fund Transfers,197.4,6963.2,215.5,7260.6,245,8538.4,296.2,10543.4,350.8,13313
-MB Transactions,Utilities Bill Payments,32.5,278,34.4,308.5,35.3,419.1,36.5,415,38,365.1
-MB Transactions,Miscellaneous Payments,10.9,601.8,11.6,642.2,12.5,708,13.7,793.3,14.6,790.1
-Call Center/IVR,Intra-Bank Fund Transfers,0,0.06,0,0.05,0,0.04,0,0.03,0,0.03
-Call Center/IVR,Inter-Bank Fund Transfers,0,0,0,0,0,0,0,0,0,0
-Call Center/IVR,Utilities Bill Payments,0.01,0.36,0.01,0.4,0.02,0.67,0.01,0.43,0.01,0.29
-Call Center/IVR,Miscellaneous Payments,0.15,1.54,0.02,1.56,0.02,1.28,0.02,1.15,0.01,1.08
-CNP e-Commerce Transactions,Local cards,7.8,35.4,8.1,34.6,9.1,35.6,10.8,42.2,11.6,46
-CNP e-Commerce Transactions,International cards,1.7,16.7,1.8,17.5,1.8,16.9,1.9,19.3,1.9,21.7
-EMI Wallet,Intra-EMI Fund Transfers,1.8,5.5,2.4,7.6,2.7,9.5,3.1,9.3,3.3,10.8
-EMI Wallet,Inter-EMI & Bank Fund Transfers,15.2,52.8,18,64.5,22.3,78.3,27,90.4,31.1,113
-EMI Wallet,Bill Payments/ Mobile Top-ups,2.4,3,2.9,3.8,3.1,4.9,3.7,5.1,4.4,5.4
-EMI Wallet,Miscellaneous Payments,3.4,0.7,3.6,0.8,4.3,0.6,4.7,0.7,5.2,0.9
-BB Wallet,Fund Transfers,382.2,2046.2,466.1,2480.7,514.1,2617.1,576.1,2982.9,654.7,3521.8
-BB Wallet,Bill Payments/ Mobile Top-ups,213.5,143.8,220.9,163.1,221.7,196.1,227.1,189.1,239.2,174.7
-BB Wallet,Online Merchant Purchases,29.2,26.5,81.9,68.8,106.6,93.2,139.5,131.4,199.1,190.4
-BB Wallet,Retail Store Purchases,16.6,44.9,18.9,48.6,21.3,53.4,22.1,58.2,21.7,61.3
-BB Wallet,Miscellaneous Payments,40.3,26.7,34.8,43.9,30.2,43.3,27.8,33,33.7,39.7
-BB Agent Based,Fund Transfers,0.08,1.33,0.02,0.13,0.05,5.61,0.23,10.33,0.23,7.23
-BB Agent Based,Bill Payments/ Mobile Top-ups,30.3,105.5,29.7,117.6,27.9,152.3,29,122,29.7,89.7
-BB Agent Based,Cash Deposits,66.4,500.8,61.1,466.8,63.8,459,66,476.4,66.8,479
-BB Agent Based,Cash Withdrawals,10.4,90.8,10.2,44.9,11,56.8,14,92.6,15,87.2
-BB Agent Based,Miscellaneous Payments,7,133.8,6.1,140.2,6.5,167.8,7.1,183.7,10.8,199.8
-Paper Based,Cash Deposit,21.8,6993,20.8,7402.2,22.1,7405.6,23.8,7217.8,21.7,6672.2
-Paper Based,Cash Deposit (RTOB),23.5,6446.3,20.9,6022.9,22.5,6142.1,24.4,6807,22.1,6495.1
-Paper Based,Cash Withdrawal,37.4,7842.2,35.7,7449.7,35.8,7310.5,37,8018.2,38.4,7870.7
-Paper Based,Cash Withdrawal (RTOB),10.6,2836.4,10,2740.3,9.8,2554,10.5,2718.3,10.7,2907.3
-Paper Based,Intra-Bank FT,9.4,31974.3,9.4,34362.8,9.4,33336.7,9.6,38332,9.9,39500.6
-Paper Based,Intra-Bank FT (RTOB),14.5,29214.2,14.8,29997,15.2,28534.5,16.3,29827.2,16.7,38075.9
-Paper Based,Inter-Bank FT,9.1,9167,8.8,9473.9,8.4,9122.9,8.7,9354.6,8.5,8960.9
-Paper Based,PO/DD/Banker's Cheque,1.7,3692.5,1.8,3120,1.6,2740.3,1.7,3328.6,1.8,3470.8
-Paper Based,Utility Bill Payments,14.8,556.8,14.6,611.3,16.4,772.5,15.7,721.1,14,610.5
-Paper Based,Others Instruments,0.2,1554.6,0.2,1482.6,0.1,1585.6,0.2,1438.2,0.2,1185.3
-Direct Debit,Direct Debit,0.58,4376.4,0.59,5311.4,0.56,5706.7,0.57,6572.9,0.57,5722.5
+Transaction Type,Sub_type,Q3_FY24_Volume,Q3_FY24_Value,Q4_FY24_Volume,Q4_FY24_Value,Q1_FY25_Volume,Q1_FY25_Value,Q2_FY25_Volume,Q2_FY25_Value,Q3_FY25_Volume,Q3_FY25_Value,Q4_FY25_Volume,Q4_FY25_Value,Q1_FY26_Volume,Q1_FY26_Value
+ATM,Cash withdrawals,230.5,3518.2,239.4,3680.1,237.5,3531.5,253,3872.8,265.3,4318.2,258.9,"4,113.80",260.8,"4,091.40"
+ATM,Intra-Bank Fund Transfer,1.3,80.3,1.3,75.8,1.2,75.6,1.3,76.4,1.3,84.8,1.1,78.10,1.2,80.1
+ATM,Inter-Bank Fund Transfers,3.4,172.2,3.3,162.6,3.3,164.6,3.5,171.9,3.6,179.4,3.3,186.50,3.6,171.6
+ATM,Utilities Bill Payments,0.3,4.3,0.2,4.5,0.3,5.4,0.3,5,0.3,4.4,0.2,5.80,0.4,6.9
+ATM,Cash/Instrument Deposits,1,111.4,1,103.9,1.1,115,1.2,131,0.5,162.9,2.4,144.30,1.5,155.6
+ATM,Other ATM based,0,0.2,0,0.2,0.01,0.19,0.01,0.19,0.01,0.2,0,0.18,0.01,0.17
+POS Transacations,Cash withdrawals,0.1,7.2,0.1,6.2,0.1,5.5,0.1,5.5,0.1,4.6,0,3.70,0.1,3.3
+POS Transacations,Purchase - Local,66.2,363.6,73.3,390.5,79.5,404,85.3,482.5,95,522.1,103.2,541.20,117.7,594.2
+POS Transacations,Purchase – International,4.3,23.2,3.3,18.5,3.1,17.3,3.3,21.6,3.8,23.2,4.1,23.40,4.4,22.3
+IB Transactions,Intra-Bank Fund Transfers,16.6,2334.4,16.5,2572.7,15.9,2652.7,17.3,3157.8,19,3421,16.9,"3,837.60",16.9,"3,692.50"
+IB Transactions,Inter-Bank Fund Transfers,34,3133.2,34.5,3305.4,37.4,3514.6,43.5,4955.2,45.5,5015.1,74.8,"7,004.60",58.5,"6,233.50"
+IB Transactions,Utilities Bill Payments,6.6,367.3,5.2,380.9,5.4,426.5,5.3,467.4,5.2,439.5,5.2,478.90,5.3,463
+IB Transactions,Miscellaneous Payments,1.4,599.4,1.4,756.9,1.4,943.2,1.5,1077.4,1.5,749.1,1.5,"1,092.00",1.6,"1,089.00"
+MB Transactions,Intra-Bank Fund Transfers,60.6,5112.3,62.5,5306.8,67.5,5930.9,77.1,6944.6,90.3,8571.4,88.8,"8,892.30",99.7,"10,295.80"
+MB Transactions,Inter-Bank Fund Transfers,197.4,6963.2,215.5,7260.6,245,8538.4,296.2,10543.4,350.8,13313,388.1,"14,847.30",432.6,"17,357.40"
+MB Transactions,Utilities Bill Payments,32.5,278,34.4,308.5,35.3,419.1,36.5,415,38,365.1,40.9,416.20,44.6,550.6
+MB Transactions,Miscellaneous Payments,10.9,601.8,11.6,642.2,12.5,708,13.7,793.3,14.6,790.1,14.7,840.40,15.7,892.8
+Call Center/IVR,Intra-Bank Fund Transfers,0,0.06,0,0.05,0,0.04,0,0.03,0,0.03,0,0.00,0,0.00
+Call Center/IVR,Inter-Bank Fund Transfers,0,0,0,0,0,0,0,0,0,0,0.1,0.00,0,0.00
+Call Center/IVR,Utilities Bill Payments,0.01,0.36,0.01,0.4,0.02,0.67,0.01,0.43,0.01,0.29,0.01,0.31,0.01,0.55
+Call Center/IVR,Miscellaneous Payments,0.15,1.54,0.02,1.56,0.02,1.28,0.02,1.15,0.01,1.08,0.01,1.09,0.01,1.37
+CNP e-Commerce Transactions,Local cards,7.8,35.4,8.1,34.6,9.1,35.6,10.8,42.2,11.6,46,12.7,47.80,12.5,48.20
+CNP e-Commerce Transactions,International cards,1.7,16.7,1.8,17.5,1.8,16.9,1.9,19.3,1.9,21.7,2,20.20,2.1,20.10
+EMI Wallet,Intra-EMI Fund Transfers,1.8,5.5,2.4,7.6,2.7,9.5,3.1,9.3,3.3,10.8,3.4,11.00,3.8,12.20
+EMI Wallet,Inter-EMI & Bank Fund Transfers,15.2,52.8,18,64.5,22.3,78.3,27,90.4,31.1,113,36.4,124.00,46.1,154.70
+EMI Wallet,Bill Payments/ Mobile Top-ups,2.4,3,2.9,3.8,3.1,4.9,3.7,5.1,4.4,5.4,5,6.40,5.2,8.30
+EMI Wallet,Miscellaneous Payments,3.4,0.7,3.6,0.8,4.3,0.6,4.7,0.7,5.2,0.9,5.4,1.00,5.9,1.30
+BB Wallet,Fund Transfers,382.2,2046.2,466.1,2480.7,514.1,2617.1,576.1,2982.9,654.7,3521.8,596.1,"3,113.00",725.6,"3,638.00"
+BB Wallet,Bill Payments/ Mobile Top-ups,213.5,143.8,220.9,163.1,221.7,196.1,227.1,189.1,239.2,174.7,240,199.70,255.5,261.7
+BB Wallet,Online Merchant Purchases,29.2,26.5,81.9,68.8,106.6,93.2,139.5,131.4,199.1,190.4,238.7,247.70,235.1,274.7
+BB Wallet,Retail Store Purchases,16.6,44.9,18.9,48.6,21.3,53.4,22.1,58.2,21.7,61.3,20.7,60.80,28.4,91.5
+BB Wallet,Miscellaneous Payments,40.3,26.7,34.8,43.9,30.2,43.3,27.8,33,33.7,39.7,109.7,160.00,109.1,155.5
+BB Agent Based,Fund Transfers,0.08,1.33,0.02,0.13,0.05,5.61,0.23,10.33,0.23,7.23,28.39,174.73,23.6,111.4
+BB Agent Based,Bill Payments/ Mobile Top-ups,30.3,105.5,29.7,117.6,27.9,152.3,29,122,29.7,89.7,21.4,79.50,27,155.6
+BB Agent Based,Cash Deposits,66.4,500.8,61.1,466.8,63.8,459,66,476.4,66.8,479,59.2,412.90,42.3,284.5
+BB Agent Based,Cash Withdrawals,10.4,90.8,10.2,44.9,11,56.8,14,92.6,15,87.2,17,214.70,7.1,89.7
+BB Agent Based,Miscellaneous Payments,7,133.8,6.1,140.2,6.5,167.8,7.1,183.7,10.8,199.8,59.6,310.40,28.7,276.1
+Paper Based,Cash Deposit,21.8,6993,20.8,7402.2,22.1,7405.6,23.8,7217.8,21.7,6672.2,21,"7,436.20",22.3,"7,432.00"
+Paper Based,Cash Deposit (RTOB),23.5,6446.3,20.9,6022.9,22.5,6142.1,24.4,6807,22.1,6495.1,20.2,"6,849.40",21.3,"6,438.70"
+Paper Based,Cash Withdrawal,37.4,7842.2,35.7,7449.7,35.8,7310.5,37,8018.2,38.4,7870.7,33.1,"7,600.30",33.5,"6,916.70"
+Paper Based,Cash Withdrawal (RTOB),10.6,2836.4,10,2740.3,9.8,2554,10.5,2718.3,10.7,2907.3,9.3,"2,903.10",9.5,"2,738.60"
+Paper Based,Intra-Bank FT,9.4,31974.3,9.4,34362.8,9.4,33336.7,9.6,38332,9.9,39500.6,8.8,"46,022.80",9,"54,326.50"
+Paper Based,Intra-Bank FT (RTOB),14.5,29214.2,14.8,29997,15.2,28534.5,16.3,29827.2,16.7,38075.9,17.8,"20,700.60",16.4,"18,962.40"
+Paper Based,Inter-Bank FT,9.1,9167,8.8,9473.9,8.4,9122.9,8.7,9354.6,8.5,8960.9,7.7,"9,578.90",7.7,"8,462.90"
+Paper Based,PO/DD/Banker's Cheque,1.7,3692.5,1.8,3120,1.6,2740.3,1.7,3328.6,1.8,3470.8,1.8,"3,490.90",1.7,"2,865.80"
+Paper Based,Utility Bill Payments,14.8,556.8,14.6,611.3,16.4,772.5,15.7,721.1,14,610.5,14.5,668.80,15.2,753.4
+Paper Based,Others Instruments,0.2,1554.6,0.2,1482.6,0.1,1585.6,0.2,1438.2,0.2,1185.3,0.2,740.60,0.1,578.8
